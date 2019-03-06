@@ -1,0 +1,19 @@
+{
+ "content": null, 
+ "creation": "2019-03-04 23:20:17.877715", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "idx": 0, 
+ "modified": "2019-03-06 21:36:32.806862", 
+ "modified_by": "Administrator", 
+ "module": "Metabase", 
+ "name": "dashboard", 
+ "owner": "Administrator", 
+ "page_name": "Dashboard", 
+ "roles": [], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "system_page": 0, 
+ "title": "Project Dashboard"
+}
