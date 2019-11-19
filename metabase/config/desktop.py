@@ -7,8 +7,9 @@ def get_data():
 		{
 			"module_name": "Metabase",
 			"color": "grey",
-			"icon": "lnr lnr-pie-chart",
-			"type": "module",
-			"label": _("Metabase")
+			"icon": "octicon octicon-dashboard",
+			"type": "page",
+			"link": "metabase-dashboard",
+			"label": _("Metabase Dashboard")
 		}
 	]
