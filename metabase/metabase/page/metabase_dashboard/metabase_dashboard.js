@@ -1,3 +1,6 @@
+// Copyright (c) 2019, Officexlr Business Solutions Pvt Ltd. and Contributors
+// License: MIT. See license.txt
+
 frappe.pages['metabase-dashboard'].on_page_load = function(wrapper) {
 	frappe.metabase = new frappe.Metabase(wrapper)
 }

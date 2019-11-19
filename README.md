@@ -1,7 +1,5 @@
 ## Metabase
-
-Metabase Dashboards Integration
+Metabase Integration for Frappe Framework
 
 #### License
-
-proprietary
+This repository has been released under the [MIT License](LICENSE).

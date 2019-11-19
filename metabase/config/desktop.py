@@ -1,3 +1,6 @@
+# Copyright (c) 2019, Officexlr Business Solutions Pvt Ltd. and Contributors
+# License: MIT. See license.txt
+
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from frappe import _
