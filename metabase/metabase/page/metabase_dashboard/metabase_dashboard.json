@@ -1,19 +1,19 @@
 {
  "content": null, 
- "creation": "2019-03-04 23:20:17.877715", 
+ "creation": "2019-11-19 10:59:53.504122", 
  "docstatus": 0, 
  "doctype": "Page", 
  "idx": 0, 
- "modified": "2019-03-06 21:36:32.806862", 
+ "modified": "2019-11-19 11:00:10.251365", 
  "modified_by": "Administrator", 
  "module": "Metabase", 
- "name": "dashboard", 
+ "name": "metabase-dashboard", 
  "owner": "Administrator", 
- "page_name": "Dashboard", 
+ "page_name": "Metabase Dashboard", 
  "roles": [], 
  "script": null, 
  "standard": "Yes", 
  "style": null, 
  "system_page": 0, 
- "title": "Project Dashboard"
+ "title": "Metabase Dashboard"
 }

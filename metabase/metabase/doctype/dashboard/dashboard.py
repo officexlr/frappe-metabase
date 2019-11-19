@@ -3,7 +3,7 @@
 # For license information, please see license.txt
 
 from __future__ import unicode_literals
-import frappe
+import frappe, json
 from frappe import _
 from frappe.model.document import Document
 
@@ -12,17 +12,13 @@ class Dashboard(Document):
 
 @frappe.whitelist()
 def get_signed_url(filters=None):
-	import jwt
-	import json
-	METABASE_SITE_URL = "https://dashboard.officexlr.com"
-	METABASE_SECRET_KEY = "6be20585e50ef96de1096b86b8bcbcb2a71f9a2433b4a8d5ffa9da2147d2c3d2"
-	filters_payload = json.loads(filters)
-	
-	payload = {
-		"resource": {"dashboard": 36},
-		"params": filters_payload
-	}
+	if filters:
+		filters = frappe._dict(json.loads(filters))
 
-	token = jwt.encode(payload, METABASE_SECRET_KEY, algorithm="HS256")
-	iframeUrl = METABASE_SITE_URL + "/embed/dashboard/" + token.decode("utf8") + "#bordered=false&titled=false"
-	return iframeUrl
+	doc = frappe.get_single("Metabase Settings")
+	metabase_dashboard_id = frappe.db.get_value("Dashboard", filters.dashboard_id, "metabase_dashboard_id")
+	print("-"*10)
+	print(metabase_dashboard_id)
+	print("-"*10)
+	resp = doc.get_signed_url(metabase_dashboard_id)
+	return resp
