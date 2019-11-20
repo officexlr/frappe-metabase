@@ -13,6 +13,6 @@ def get_data():
 			"icon": "octicon octicon-dashboard",
 			"type": "page",
 			"link": "metabase-dashboard",
-			"label": _("Metabase Dashboard")
+			"label": _("Dashboard")
 		}
 	]

@@ -9,7 +9,7 @@ frappe.Metabase = Class.extend({
 	init: function (parent) {
 		frappe.ui.make_app_page({
 			parent: parent,
-			title: 'Metabase Dashboard',
+			title: 'Dashboard',
 			single_column: true
 		})
 		
@@ -28,9 +28,9 @@ frappe.Metabase = Class.extend({
 			fieldname: "dashboard", 
 			options: "Dashboard",
 			label: __("Dashboard"), 
+			reqd:1,
 			change: function() {
 				me.get_dashboard()
-				// $(frappe.render_template('metabase-dashboard')).appendTo(me.page.body)
 			}
 		})	
 	},
